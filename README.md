@@ -11,10 +11,11 @@ alias gl="git pull"
 alias gp="git push"
 alias gss="git status -s"
 alias gcb="git checkout - "
+
 source ~/.git-prompt.sh
 GIT_PS1_SHOWUPSTREAM=""
 
-setopt PROMPT_SUBST  # zsh'de prompt içinde komut çalıştırmak için
+setopt PROMPT_SUBST 
 PROMPT="%F{green}┌─ %n@%m -[%~]%f \$(__git_ps1 ' (%s)') 
 %F{green}└─%f$ "' >> ~/.zshrc
 
