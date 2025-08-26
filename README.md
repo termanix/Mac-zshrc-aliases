@@ -19,5 +19,14 @@ setopt PROMPT_SUBST
 PROMPT="%F{green}┌─ %n@%m -[%~]%f \$(__git_ps1 ' (%s)') 
 %F{green}└─%f$ "' >> ~/.zshrc
 
-curl -L https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh >> ~/.zshrc
+curl -o ~/.git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+```
+
+After than open a new terminal or `source ~/.zshrc`
+
+```bash
+┌─ user@user-MacBook-Air -[~]  
+└─$ cd Desktop/NetExec 
+┌─ user@user-MacBook-Air -[~/Desktop/NetExec]  (main) 
+└─$ 
 ```
